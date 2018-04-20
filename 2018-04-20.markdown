@@ -1,0 +1,88 @@
+## 基于网页的药物再利用工具
+中国制造2025中与生信密切相关的是生物医药及高性能医疗器械，『发展针对重大疾病的化学药、中药、生物技术药物新产品，重点包括新机制和新靶点化学药、抗体药物、抗体偶联药物、全新结构蛋白及多肽药物、新型疫苗、临床优势突出的创新中药及个性化治疗药物。』。正好今天看到一篇药物再利用相关的文章，给大家分享一下。
+这篇文章主要介绍了药物再利用的网页工具。大家可以利用这些工具，看自己研究的基因或蛋白是否与某些药物有关，或者是否可以作为某些药物的作用靶点等~~~
+>文章：
+Web-based drug repurposing tools: a survey. 『Briefings in Bioinformatics』
+
+```
+drug repurposing/drug repositioning: 药物再利用
+wikipedia解释: Drug repositioning (also known as drug repurposing, re-profiling, re-tasking or therapeutic switching) is the application of known drugs and compounds to treat new indications (i.e., new diseases). [https://en.wikipedia.org/wiki/Drug_repositioning]
+——————————————————————————————————————————————————————
+ncbi解释: Repurposing generally refers to studying drugs that are already approved to treat one disease or condition to see if they are safe and effective for treating other diseases. [https://ncats.nih.gov/preclinical/repurpose#learn-more]
+简而言之，研究已有药物的性质，看是否能安全有效的应用于其他疾病。
+```
+
+```
+Eroom’s law: 倒摩尔定律
+wikipedia解释: Eroom's law is the observation that drug discovery is becoming slower and more expensive over time, despite improvements in technology (such as high throughput screening, biotechnology, combinatorial chemistry, and computational drug design), a trend first observed in the 1980s. The cost of developing a new drug roughly doubles every nine years (inflation-adjusted)
+倒摩尔定律： 尽管技术不断进步，但药物研发的速度越来越慢、越来越快
+摩尔定律： 当价格不变时，集成电路上可容纳的元器件的数目，约每隔18-24个月便会增加一倍，性能也将提升一倍
+```
+
+>药物研发流程
+> https://www.fda.gov/ForPatients/Approvals/Drugs/default.htm
+
+![](./_image/2018-04-20-11-00-27.jpg)
+
+随着药物研发的越来越快、越来越贵，而且临床试验阶段就中止的药物比例越来越高，药物再利用渐渐成为对抗药物失败风险的有效途径。一些计算分析和挖掘方法常被用于探索大量的生物学、生物医学数据。但很多计算工具常常难以使用，限制了非计算背景的科学家使用。所以用户友好的网页工具变的非常必要。
+
+>The ideal candidates for repurposing are leads which have made it past Phase III, in terms of the American Food and Drug Administration (FDA) system, as this implies they are proven to be efficacious in larger populations and verified to be safe
+> The recent times have seen many successes in repositioning old drugs (see **RepurposeDB** for a list of repurposed drugs),
+
+```
+有以下特点的网页工具将被排除在外：
+1.  Web services that only provide a collection of repurposed drugs: RepurposeDB , The Drug Repurposing Hub and repoDB;
+
+2.  Tools whose outputs do not provide a direct way of inferring the repurposing prediction (e.g. they may generate pharmacophores, weighted or non-weighted interaction networks): PharmMapper , PharmaGist, ProSMoS and VisANT;
+
+3.  Studies that focus on any one single family, or some functional subset of proteins, or a single disease: iCDI-PseFpt, AlzPlatform and ACTP;
+
+4.  Resources that only aggregate databases and provide associ- ations by connecting them, without using any predictive algorithm-based analysis: Pharos, SIDER, DTome, ChEMBL and PubChem;
+
+5.  Web-UI tools that predict interactions of molecules with non-protein targets: ChemiRs;
+
+6.  Web portals not accessible during the time of this review (authors have been contacted around the month of May 2017, if the Web site was down)
+
+7.  Studies that are not published in peer-reviewed journals;
+```
+
+
+
+作者将网页工具分为三大类：
+1. Predicting drug–target interactions
+    1. Ligand similarity using fingerprint encoding
+    2. 3D structures of drug and targets
+    3. Biological networks
+    4. Binding site parametrization
+    5. Others
+2. Linking drugs to disease
+3. Using drug-induced gene expression to predict new connections
+
+###  Web servers predicting drug–target interactions.
+![](./_image/2018-04-20-11-33-42.jpg)
+
+###  Web servers linking drugs to disease
+
+![](./_image/2018-04-20-11-34-39.jpg)
+
+### Web servers using drug-induced gene expressions to predict new connections
+
+![](./_image/2018-04-20-11-35-01.jpg)
+
+### 所有网页工具的简单信息
+
+![](./_image/2018-04-20-11-36-33.jpg)
+
+![](./_image/2018-04-20-11-37-07.jpg)
+
+具体到每个工具的信息，还需要有兴趣的朋友自己看相关论文。
+如果各位对计算方法、工具感兴趣的话，可以看
+『On the Integration of In Silico Drug Design Methods for Drug Repurposing』
+
+
+
+
+
+
+
+
